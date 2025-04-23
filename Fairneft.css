@@ -1,0 +1,351 @@
+
+body{
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+.main {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 580px;
+    align-content: center;
+}
+.logo{
+    margin-left: 50px;
+}
+.nav a, .dropdown {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown a:hover{
+    color: black;
+  }
+.register-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #77C476;
+    color: whitesmoke;
+    margin-right: 30px;
+    border: none;
+    font-weight: 700;
+}
+.login-btn{
+    width: 100px;
+    height: 40px;
+    background-color:#5665B0;
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+header{
+    background-color: #5665B0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    align-items: center;
+    position: fixed;
+    width: 1310px;
+}
+header nav a{
+    color: white;
+    font-weight: 700;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+header nav a:hover{
+    color: #77C476;
+}
+.empower-main{
+    width: 700px;
+    margin: none;
+    color: white;
+    margin-left: 60px;
+}
+.empower-main>h1{
+    font-size:60px;
+    margin-bottom:  10px; 
+}
+.btn1{
+    width: 150px;
+    height: 40px;
+    background-color: #77C476;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+.btn2{
+    width: 150px;
+    height: 40px;
+    background-color:rgb(58, 58, 247);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+ .main1{
+    margin-left: 60px;
+    margin-top:100px ;
+    display: flex;
+    gap: 80px;
+ }
+ .personal{
+    width: 700px;
+    font-size: 38;
+ }
+ .pc{
+    color:  rgb(33, 135, 175);
+ }
+ .pic{
+    margin: 10px; 
+    height: 400px;
+    width: 400px;
+ }
+ .main2{
+    margin-left: 60px;
+    margin-top:100px ;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+ }
+ .business{
+    margin: 40px;
+    width: 700px;
+    font-size: 38;
+ }
+ .pc{
+    color:  rgb(33, 135, 175);
+ }
+ .cibil-main{
+    display: flex;
+    background-color: whitesmoke;
+    height: 700px;
+    gap: 20px;
+ }
+ .cibil{
+    margin: 40px;
+    width: 600px;
+    font-size: 38;
+ }
+ .cibil span{
+    color:#77C476 ;
+ }
+ .eligilibity-main{
+    display: flex;
+    background-color:#5665B0;
+    height: 600px;
+    gap: 20px;
+ }
+ .eligilibity{
+    margin: 40px;
+    width: 600px;
+    font-size: 38;
+ }
+ .eligilibity span{
+    color:#77C476 ;
+ }
+ .empower-ts{
+    display: flex;
+    background-color:#e2e3e5;
+    height: 400px;
+    gap: 20px;
+ }
+ .ts{
+    margin: 40px;
+    width: 900px;
+    font-size: 38;
+ }
+ .ts span{
+    color:#77C476 ;
+ }
+ .parent-para{
+    background-color:#e2e3e5 ;
+ }
+ .para{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    gap: 200px;
+ }
+ .p{
+    padding-left:300px ;
+ }
+ .para span{
+    color: #5665B0;
+    font-weight: 700;
+ }
+ hr{
+    margin-left: 40px;
+    margin-right: 40px;
+ }
+.support{
+    margin-left: 40px;
+    display: flex;
+}
+.support input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.queries{
+    width: 700px;
+ }
+.form-group {
+    margin-bottom: 15px;
+  }
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  .form-row .form-group {
+    flex: 1;
+  }
+  .check-box{
+    padding:40px;
+    gap: none;
+  }
+  .box{
+    margin-bottom: 50px;
+  }
+ .faq-container {
+   max-width: 700px;
+   margin: 50px auto;
+   padding: 0 20px;
+ }
+ 
+ h1 {
+   font-size: 2.5rem;
+   /* text-align: center; */
+   margin-bottom: 10px;
+ }
+ 
+ .subtitle {
+   text-align: center;
+   color: #666;
+   margin-bottom: 40px;
+ }
+ 
+ .faq-item {
+   border-bottom: 1px solid #ddd;
+   padding: 15px 0;
+ }
+ 
+ .faq-question {
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+   font-size: 1.1rem;
+   font-weight: 500;
+   color: #000;
+ }
+ 
+ .toggle-icon {
+   font-weight: bold;
+   font-size: 1.5rem;
+ }
+ 
+ .faq-answer {
+   padding-top: 10px;
+   font-size: 1rem;
+   color: #555;
+   display: none;
+ }
+ 
+ .faq-cta {
+   background:rgb(252, 249, 249);
+   padding: 30px;
+   border-radius: 30px;
+   margin-top: 40px;
+   /* margin-left: 250px; */
+   width: 800px;
+   /* margin-right: 450px; */
+   justify-items:center ;
+ }
+ .touch{
+   border-radius: 30px;
+   padding: 15px;
+   background-color: #29c221;
+   border:1px solid #29c221;
+   width: 200px;
+ }
+  .footer-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    background-color: whitesmoke;
+  }
+  .footer-logo{
+    width: 180px;
+  }
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: whitesmoke; */
+  }
+  .footer-content>h4{
+    color: #5665B0;
+  }
+  /* .mainfooter{
+   background-color: whitesmoke;
+  } */
+
+
+  /* @media (max-width:500px){
+   .main{
+      background-size:contain ;
+      width: 499px;
+   }
+   .empower-main{
+      width: 400px;
+      margin-left: 30px;
+   }
+   .empower-main>h1{
+      font-size: 30px;
+   }
+   .btn1 .btn2{
+      width: 7spx;
+      height: 20px;
+   }
+   .main1{
+      display: flex;
+      flex-direction:column ;
+   }
+   .main2{
+      display: flex;
+      flex-direction: column;
+   }
+   .personal{
+      width: 350px;
+      font-size:  15px;
+   }
+   .business{
+      width:350px;
+      font-size: 15px;
+      margin: 20px;
+   }
+   .cibil{
+      width:300px;
+      font-size: 15px;
+      margin:20px;
+   }
+   .cibil-main{
+      display: flex;
+      flex-direction: column;
+      height: 350px;
+      gap: 5px;
+   }
+  } */
+  
+
+  
