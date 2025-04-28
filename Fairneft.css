@@ -1,9 +1,11 @@
-
 body{
    font-family: Arial, sans-serif;
    margin: 0;
    padding: 0;
 }
+body, html {
+   overflow-x: hidden;
+ } 
 .main {
     background-image: url(background.png);
     background-repeat: no-repeat;
@@ -47,8 +49,9 @@ header{
     background-color: #5665B0;
     color: white;
     display: flex;
+    gap: 106px;
     justify-content: space-between;
-    padding: 0.75rem 1.5rem;
+    padding: 0.60rem 1.5rem;
     align-items: center;
     position: fixed;
     width: 1310px;
@@ -67,10 +70,12 @@ header nav a:hover{
     margin: none;
     color: white;
     margin-left: 60px;
+    /* margin-top: 20px; */
 }
 .empower-main>h1{
     font-size:60px;
     margin-bottom:  10px; 
+    margin-top: 80px;
 }
 .btn1{
     width: 150px;
@@ -100,6 +105,10 @@ header nav a:hover{
     width: 700px;
     font-size: 38;
  }
+ .personal>h4{
+   font-size: 19px;
+   color: rgb(4, 177, 4);
+}
  .pc{
     color:  rgb(33, 135, 175);
  }
@@ -120,9 +129,9 @@ header nav a:hover{
     width: 700px;
     font-size: 38;
  }
- .pc{
+ /* .pc{
     color:  rgb(33, 135, 175);
- }
+ } */
  .cibil-main{
     display: flex;
     background-color: whitesmoke;
@@ -134,8 +143,15 @@ header nav a:hover{
     width: 600px;
     font-size: 38;
  }
+ /* .cibil-img{
+   height:700px; 
+   width:200px;
+  }  */
  .cibil span{
     color:#77C476 ;
+ }
+ .cibil>h1{
+   font-size: 50px;
  }
  .eligilibity-main{
     display: flex;
@@ -146,15 +162,31 @@ header nav a:hover{
  .eligilibity{
     margin: 40px;
     width: 600px;
-    font-size: 38;
+    font-size:50px;
+ }
+ .eligilibity>h1{
+   font-size: 38px;
+   color: white;
+ }
+ .eligilibity>p{
+   font-size: 20px;
  }
  .eligilibity span{
     color:#77C476 ;
  }
+ .eligible-img{
+   margin-top: 50px; 
+   height:500px; 
+   width:500px;
+ }
+ /* .eligilibity>p{
+   font-size: 16px;
+   color: white;
+} */
  .empower-ts{
     display: flex;
     background-color:#e2e3e5;
-    height: 400px;
+    height: 500px;
     gap: 20px;
  }
  .ts{
@@ -162,11 +194,21 @@ header nav a:hover{
     width: 900px;
     font-size: 38;
  }
+ .ts>h1{
+   font-size:38px;
+}
+.ts>p{
+   font-size: 16px;
+}
+.ts>h4{
+   font-size: 20px;
+}
  .ts span{
     color:#77C476 ;
  }
  .parent-para{
     background-color:#e2e3e5 ;
+    /* gap: 40px; */
  }
  .para{
     margin-left: 40px;
@@ -198,6 +240,13 @@ header nav a:hover{
 .queries{
     width: 700px;
  }
+ .queries>h1{
+   font-size: 50px;
+}
+.queries-img{
+   width:500px;
+   height:500px;
+}
 .form-group {
     margin-bottom: 15px;
   }
@@ -205,6 +254,9 @@ header nav a:hover{
     display: flex;
     gap: 10px;
   }
+  .form-width{
+   width: 650px;
+ }
   .form-row .form-group {
     flex: 1;
   }
@@ -215,13 +267,29 @@ header nav a:hover{
   .box{
     margin-bottom: 50px;
   }
+.box>button{
+   border-radius: 50px;
+    color: white;
+     border: none; 
+     background-color:#77C476;
+      width: 250px; 
+      height:40px; 
+      margin-left: 150px ;
+}
+.pe{
+   color: white;
+   font-size: 20px;
+}
+/* .eligilibity>label{
+   font-size: 20px;
+} */
  .faq-container {
    max-width: 700px;
    margin: 50px auto;
    padding: 0 20px;
  }
  
- h1 {
+ .faq>h1 {
    font-size: 2.5rem;
    /* text-align: center; */
    margin-bottom: 10px;
@@ -296,56 +364,811 @@ header nav a:hover{
   .footer-content>h4{
     color: #5665B0;
   }
-  /* .mainfooter{
-   background-color: whitesmoke;
-  } */
 
 
-  /* @media (max-width:500px){
-   .main{
-      background-size:contain ;
-      width: 499px;
+
+
+@media (max-width:650px){
+   .logo{
+      margin-left: 20px;
    }
-   .empower-main{
-      width: 400px;
-      margin-left: 30px;
+   .nav a, .dropdown{
+      padding: 5px 6px;
    }
-   .empower-main>h1{
-      font-size: 30px;
+   .register-btn{
+      width:40px;
+      height: 15px;
+      margin-right: 12px;
+      font-weight: 300px;
    }
-   .btn1 .btn2{
-      width: 7spx;
-      height: 20px;
+   .login-btn .btn1 .btn2{
+      width: 40px;
+      height: 15px;
+      font-weight: 300px;
    }
-   .main1{
-      display: flex;
-      flex-direction:column ;
-   }
-   .main2{
+   header{
       display: flex;
       flex-direction: column;
+      padding: 20px;
+      width: auto;
+      position: static;
+   }
+   header nav a{
+      font-weight: 300px;
+      margin:10px;
+   }
+   .main{
+      height: auto;
+   }
+   .empower-main{
+      width: auto;
+      margin-left: 15px;
+   }
+   .empower-main>h1{
+      font-size: 25px;
+   }
+   .main1 {
+      margin-left: 25px;
+      margin-top: 40px;
+      flex-direction: column;
+      gap: 30px;
+   }
+   .main2{
+      margin-left: 25px;
+      margin-top: 40px;
+      flex-direction: column;
+      gap: 30px;
    }
    .personal{
-      width: 350px;
-      font-size:  15px;
+      width: auto;
+      font-size: 12px;
+   }
+   .personal>h4{
+      font-size: 12px;
    }
    .business{
-      width:350px;
-      font-size: 15px;
-      margin: 20px;
+      width: auto;
+      font-size: 12px;
+      margin: 15px;
+   }
+   .pic{
+      height: 250px;
+      width: 250px;
+   }
+   .cibil-main{
+      flex-direction: column;
+      height: 1250px;
+      gap: 8px;
+      width: auto;
    }
    .cibil{
-      width:300px;
+      margin: 15px;
+      width: auto;
+      font-size: 12px;
+   }
+   .cibil-img{
+      width: 50%;
+      height: 200px;
+   }
+   .cibil>h1{
+      font-size: 25px;
+   }
+   .eligilibity-main{
+      flex-direction: column;
+      height: 750px;
+      gap: 8px;
+      margin: none;
+   }
+   .eligilibity{
+      margin: 15px;
+    width: auto;
+    font-size: 12;
+   }
+   .eligible>h1{
+      font-size: 25px;
+   }
+   .eligible-img{
+      /* margin-bottom: 20px; */
+       height:310px; 
+       width:auto;
+       margin-left: 25px;
+   }
+
+   .empower-ts{
+      flex-direction: column;
+      height: 400px;
+      gap: 10px;
+   }
+   .ts{
+      margin: 20px;
+      width: auto;
+      font-size: 25px;
+   }
+   .ts>h1{
+      font-size: 25px;
+   }
+   .ts>h4{
       font-size: 15px;
-      margin:20px;
+   }
+   .ts>p{
+      font-size: 12px;
+   }
+   .para{
+      margin-left: 20px;
+      margin-right: 15px;
+     flex-direction: column;
+      gap: 70px;
+   }
+   .p{
+      padding-left:100px ;
+   }
+   .para span{
+      font-weight: 500;
+   }
+   hr{
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+  .support{
+      margin-left: 20px;
+      flex-direction: column;
+  }
+  .support input{
+      width: auto;
+      height: 30px;
+  }
+  .queries{
+      width: auto;
+   }
+   .queries>h1{
+      font-size: 25px;
+   }
+   .queries-img{
+      width:auto;
+      height:300px;
+   }
+  .form-group {
+      margin-bottom: 10px;
+    }
+    .form-row {
+     flex-direction: column;
+      gap: 10px;
+    }
+    .form-width{
+      width: auto;
+    }
+    .form-row .form-group {
+      flex: 1;
+    }
+    .check-box{
+      padding:20px;
+      gap: none;
+    }
+    .box{
+      margin-bottom: 20px;
+    }
+    box>button{
+         width: 200px; 
+         height:40px; 
+         margin-left: 80px ;
+   }
+   .eligilibity>h1{
+      font-size: 30px;
+   }
+   .pe{
+      font-size: 12px;
+   }
+   .faq-container {
+     width: auto;
+     margin: 30px auto;
+     padding:0 10px;
+   }
+   
+   .faq>h1 {
+     font-size: 16px;
+     margin-bottom: 8px;
+   }
+   
+   .subtitle {
+     margin-bottom: 20px;
+   }
+   
+   .faq-item {
+     padding: 8px 0;
+   }
+   
+   .faq-question {
+     flex-direction: column;
+     justify-content: space-between;
+     cursor: pointer;
+     font-size: 14px;
+     font-weight: 400;
+   }
+   
+   .toggle-icon {
+     font-weight: bold;
+     font-size: 14px;
+   }
+   
+   .faq-answer {
+     padding-top: 10px;
+     font-size: 12px;
+     display: none;
+   }
+   
+   .faq-cta {
+     padding: 15px;
+     margin-top: 2px;
+     width:auto;
+   }
+   .touch{
+     padding: 7px;
+     width: 150px;
+   }
+    .footer-main{
+      flex-direction: column;
+      padding: 25px;
+      flex-wrap: wrap;
+    }
+    .footer-logo{
+      width: 120px;
+    }
+    .footer-content{
+      flex-direction: column;
+      gap: 5px;
+    }
+}
+
+
+@media (min-width:650px) and (max-width:1350px){
+   body{
+      flex-wrap: wrap;
+   }
+   .logo{
+      margin-left: 40px;
+   }
+   .nav a, .dropdown{
+      padding: 9px 10px;
+   }
+   .register-btn{
+      width:80px;
+      height: 30px;
+      margin-right: 20px;
+      font-weight: 600px;
+   }
+   .login-btn .btn1 .btn2{
+      width: 80px;
+      height: 30px;
+      font-weight: 600px;
+      font-size: medium;
+   }
+   header{
+      display: flex;
+      /* flex-direction: column; */
+      display: flex;
+      padding: 40px;
+      width: auto;
+      position: static;
+   }
+   header nav a{
+      font-weight: 600px;
+      margin:30px;
+   }
+   .main{
+      height: auto;
+   }
+   .empower-main{
+      width: auto;
+      margin-left: 50px;
+      font-size: 20px;
+   }
+   .empower-main>h1{
+      font-size: 50px;
+      margin-bottom: 7px;
+   }
+   .main1 {
+      margin-left: 50px;
+      margin-top: 80px;
+      /* flex-direction: column; */
+      display: flex;
+      gap: 80px;
+   }
+   .main2{
+      margin-left: 50px;
+      margin-top: 80px;
+      /* flex-direction: column; */
+      display: flex;
+      gap: 70px;
+   }
+   .personal{
+      width: auto;
+      font-size: 30px;
+   }
+   .personal>h4{
+      font-size: 17px;
+   }
+   .business{
+      width: auto;
+      font-size: 30px;
+      margin: 30px;
+   }
+   .pic{
+      height: 300px;
+      margin: 8px;
+      width: 300px;
+   }
+   .cibil-main{
+      /* flex-direction: column; */
+      display: flex;
+      height: 1650px;
+      gap: 15px;
+      width: auto;
+   }
+   .cibil{
+      margin: 30px;
+      width: auto;
+      font-size: 30px;
+   }
+   .cibil-img{
+      width: 80%;
+      height: 400px;
+   }
+   .cibil>h1{
+      font-size: 30px;
+   }
+   .eligilibity-main{
+      /* flex-direction: column; */
+      display: flex;
+      height: 700px;
+      gap: 15px;
+      margin: none;
+   }
+   .eligilibity{
+      margin: 30px;
+    width: auto;
+    font-size: 30;
+   }
+   .eligible>h1{
+      font-size: 30px;
+   }
+   .empower-main>p{
+      font-size: 25px;
+     }
+   .eligible-img{
+      /* margin-bottom: 20px; */
+       height:400px; 
+       width:auto;
+       margin-left: 35px;
+   }
+
+   .empower-ts{
+      /* flex-direction: column; */
+      display: flex;
+      height: 400px;
+      gap: 15px;
+   }
+   .ts{
+      margin: 30px;
+      width: auto;
+      font-size: 30px;
+   }
+   .ts>h1{
+      font-size: 30px;
+   }
+   .ts>h4{
+      font-size: 17px;
+   }
+   .ts>p{
+      font-size: 23px;
+   }
+   .para{
+      margin-left: 30px;
+      margin-right: 30px;
+     /* flex-direction: column; */
+     display: flex;
+      gap: 150px;
+      font-size: 25px;
+   }
+   .p{
+      padding-left:200px ;
+   }
+   .para span{
+      font-weight: 600;
+   }
+   hr{
+      margin-left: 30px;
+      margin-right: 30px;
+   }
+  .support{
+      margin-left: 30px;
+      /* flex-direction: column; */
+      display: flex;
+      font-size: 25px;
+  }
+  .support input{
+      width: auto;
+      height: 30px;
+      font-size: 20px;
+  }
+  .queries{
+      width: auto;
+   }
+   .queries>h1{
+      font-size: 30px;
+   }
+   .queries-img{
+      width:auto;
+      height:400px;
+   }
+  .form-group {
+      margin-bottom: 12px;
+    }
+    .form-row {
+     /* flex-direction: column; */
+     display: flex;
+      gap: 10px;
+    }
+    .form-width{
+      width: auto;
+    }
+    .form-row .form-group {
+      flex: 1;
+    }
+    .check-box{
+      padding:30px;
+      gap: none;
+      font-size: 25px;
+    }
+    .box{
+      margin-bottom: 40px;
+    }
+    box>button{
+         width: 300px; 
+         height:45px; 
+         margin-left: 90px ;
+   }
+   .eligilibity>h1{
+      font-size: 35px;
+   }
+   .pe{
+      font-size: 16px;
+   }
+   .faq-container {
+     width: auto;
+     margin: 40px auto;
+     padding:0 20px;
+   }
+   
+   .faq>h1 {
+     font-size: 20px;
+     margin-bottom: 10px;
+   }
+   
+   .subtitle {
+     margin-bottom: 30px;
+   }
+   
+   .faq-item {
+     padding: 12px 0;
+   }
+   
+   .faq-question {
+     /* flex-direction: column; */
+     display: flex;
+     justify-content: space-between;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: 450;
+   }
+   
+   .toggle-icon {
+     font-weight: bold;
+     font-size: 18px;
+   }
+   
+   .faq-answer {
+     padding-top: 10px;
+     font-size: 14px;
+     display: none;
+   }
+   .faq-cta {
+     padding: 25px;
+     margin-top: 30px;
+     width:auto;
+   }
+   .touch{
+     padding: 12px;
+     width: 170px;
+   }
+    .footer-main{
+      /* flex-direction: column; */
+      display: flex;
+      padding: 50px;
+      flex-wrap: wrap;
+    }
+    .footer-logo{
+      width: 160px;
+    }
+    .footer-content{
+      /* flex-direction: column; */
+      display: flex;
+      gap: 7px;
+    }
+}
+ 
+
+@media(min-width:1350px) and (max-width:1950px)
+{
+   .main {
+      height: 580px;
+  }
+  .logo{
+      margin-left: 50px;
+  }
+  .nav a, .dropdown {
+      padding: 14px 16px;
+      position: relative;
+    }
+  .register-btn{
+      width: 100px;
+      height: 40px;
+      margin-right: 30px;
+      font-weight: 700;
+  }
+  .login-btn{
+      width: 100px;
+      height: 40px;
+      font-weight: 700;
+  }
+  /* header{
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem 2.5rem;
+      position: fixed;
+      width: 1950px;
+  } */
+  header{
+   display: flex;
+   /* flex-direction: column; */
+   padding: 20px;
+   width: auto;
+   position:fixed;
+}
+  header nav a{
+      font-weight: 700;
+      margin: 0 0.5rem;
+  }
+  .empower-main{
+      width: 700px;
+      margin: none;
+      margin-left: 60px;
+  }
+  .empower-main>h1{
+      font-size:60px;
+      margin-bottom:  10px; 
+  }
+  .empower-main>p{
+   font-size: px;
+  }
+  .btn1{
+      width: 150px;
+      height: 40px;
+      font-weight: 700;
+  }
+  .btn2{
+      width: 150px;
+      height: 40px;
+      font-weight: 700;
+  }
+   .main1{
+      margin-left: 60px;
+      margin-top:100px ;
+      display: flex;
+      gap: 80px;
+   }
+   .personal{
+      width: 700px;
+      font-size: 38;
+   }
+   .personal>h4{
+     font-size: 19px;
+  }
+   .pic{
+      margin: 10px; 
+      height: 400px;
+      width: 400px;
+   }
+   .main2{
+      margin-left: 60px;
+      margin-top:100px ;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 80px;
+   }
+   .business{
+      margin: 40px;
+      width: 700px;
+      font-size: 38;
    }
    .cibil-main{
       display: flex;
-      flex-direction: column;
-      height: 350px;
-      gap: 5px;
+      height: 700px;
+      gap: 20px;
    }
-  } */
-  
+   .cibil{
+      margin: 40px;
+      width: 600px;
+      font-size: 38;
+   }
+   .cibil>h1{
+     font-size: 50px;
+   }
+   .eligilibity-main{
+      display: flex;
+      height: 600px;
+      gap: 20px;
+   }
+   .eligilibity{
+      margin: 40px;
+      width: 600px;
+      font-size: 38;
+   }
+   .eligible>h1{
+     font-size: 50px;
+   }
+   .eligible-img{
+     margin-top: 50px; 
+     height:500px; 
+     width:500px;
+   }
+   .empower-ts{
+      display: flex;
+      height: 500px;
+      gap: 20px;
+   }
+   .ts{
+      margin: 40px;
+      width: 900px;
+      font-size: 38;
+   }
+   .ts>h1{
+     font-size:50px;
+  }
+  .ts>p{
+     font-size: 16px;
+  }
+  .ts>h4{
+     font-size: 25px;
+  }
+   .parent-para{
+      background-color:#e2e3e5 ;
+   }
+   .para{
+      margin-left: 40px;
+      margin-right: 40px;
+      display: flex;
+      gap: 200px;
+   }
+   .p{
+      padding-left:300px ;
+   }
+   .para span{
+      font-weight: 700;
+   }
+   hr{
+      margin-left: 40px;
+      margin-right: 40px;
+   }
+  .support{
+      margin-left: 40px;
+      display: flex;
+  }
+  .support input{
+      width: 300px;
+      height: 30px;
+  }
+  .queries{
+      width: 700px;
+   }
+   .queries>h1{
+     font-size: 50px;
+  }
+  .queries-img{
+     width:500px;
+     height:500px;
+  }
+  .form-group {
+      margin-bottom: 15px;
+    }
+    .form-row {
+      display: flex;
+      gap: 10px;
+    }
+    .form-width{
+     width: 650px;
+   }
+    .form-row .form-group {
+      flex: 1;
+    }
+    .check-box{
+      padding:40px;
+      gap: none;
+    }
+    .box{
+      margin-bottom: 50px;
+    }
+  .box>button{
+        width: 250px; 
+        height:40px; 
+        margin-left: 150px ;
+  }
+   .faq-container {
+     max-width: 700px;
+     margin: 50px auto;
+     padding: 0 20px;
+   }
+   
+   .faq>h1 {
+     font-size: 2.5rem;
+     /* text-align: center; */
+     margin-bottom: 10px;
+   }
+   
+   .subtitle {
+     margin-bottom: 40px;
+   }
+   
+   .faq-item {
+     padding: 15px 0;
+   }
+   
+   .faq-question {
+     display: flex;
+     justify-content: space-between;
+     cursor: pointer;
+     font-size: 1.1rem;
+     font-weight: 500;
+   }
+   
+   .toggle-icon {
+     font-weight: bold;
+     font-size: 1.5rem;
+   }
+   
+   .faq-answer {
+     padding-top: 10px;
+     font-size: 1rem;
+     display: none;
+   }
+   
+   .faq-cta {
+     padding: 30px;
+     margin-top: 40px;
+     /* margin-left: 250px; */
+     width: 800px;
+     /* margin-right: 450px; */
+     justify-items:center ;
+   }
+   .touch{
+     padding: 15px;
+     width: 200px;
+   }
+    .footer-main{
+      display: flex;
+      justify-content: space-between;
+      padding: 60px;
+      flex-wrap: wrap;
+      /* gap: 20px; */
+    }
+    .footer-logo{
+      width: 180px;
+    }
+    .footer-content{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      /* background-color: whitesmoke; */
+    }
+}
 
   
